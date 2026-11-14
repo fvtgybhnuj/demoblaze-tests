@@ -28,12 +28,6 @@ jobs:
       - name: Run tests with Maven
         run: mvn clean test
 
-      - name: Prepare Allure results folder
-        if: always()
-        run: |
-          mkdir -p target/allure-results
-          chmod -R 777 target/allure-results
-
       - name: Generate Allure Report
         if: always()
         run: |
