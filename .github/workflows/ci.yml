@@ -25,8 +25,8 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Run tests with Maven
-        run: mvn clean test
+       - name: Run tests with Maven
+        run: mvn clean test -Dallure.results.directory=target/allure-results
         continue-on-error: true
 
       - name: Generate Allure Report
