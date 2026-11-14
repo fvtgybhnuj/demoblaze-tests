@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2","setUp","Surefire suite","Sat Nov 14 13:15:31 UTC 2026","broken","Sat Nov 14 13:15:31 UTC 2026","tests.DemoblazeTests","Surefire test","tests.DemoblazeTests","setUp"
+"","0","Переход в контакты и отправка сообщения","Surefire suite","Sat Nov 14 13:15:31 UTC 2026","skipped","Sat Nov 14 13:15:31 UTC 2026","tests.DemoblazeTests","Surefire test","tests.DemoblazeTests","Переход_в_контакты_и_отправка_сообщения"
+"","1","Авторизация, проверка пустой корзины и покупка","Surefire suite","Sat Nov 14 13:15:31 UTC 2026","skipped","Sat Nov 14 13:15:31 UTC 2026","tests.DemoblazeTests","Surefire test","tests.DemoblazeTests","Сквозной_сценарий_Авторизация_проверка_пустой_корзины_и_покупка"
