@@ -15,12 +15,19 @@ public class BaseTest {
     @BeforeMethod
     public void setUp() {
         WebDriverManager.chromedriver().setup();
+        
         ChromeOptions options = new ChromeOptions();
+        
+        // Критически важные параметры для запуска в GitHub Actions
+        options.addArguments("--headless=new"); 
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
-
+        options.addArguments("--window-size=1920,1080");
+        options.addArguments("--remote-allow-origins=*");
+        options.addArguments("--disable-gpu");
+        
         driver = new ChromeDriver(options);
-
+        
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().window().maximize();
     }
