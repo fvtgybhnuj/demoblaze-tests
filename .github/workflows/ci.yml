@@ -2,7 +2,7 @@ name: Demoblaze CI Tests
 
 on:
   push:
-    branches: [ main ]
+    branches: [ mikhail ]
   workflow_dispatch:
 
 permissions:
