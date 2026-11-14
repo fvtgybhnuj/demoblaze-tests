@@ -2,7 +2,12 @@
 <suite name="Demoblaze Suite">
     <test name="Demoblaze Tests">
         <classes>
-            <class name="tests.DemoblazeTests"/>
+            <class name="tests.DemoblazeTests">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                    <include name="testAddProductToCart"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

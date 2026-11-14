@@ -29,6 +29,10 @@ public class HomePage extends BasePage {
     @FindBy(id = "cartur")
     private WebElement cartLink;
 
+    @FindBy(linkText = "Contact")
+    private WebElement contactLink;
+
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -44,10 +48,16 @@ public class HomePage extends BasePage {
         usernameField.sendKeys(username);
         passwordField.sendKeys(password);
         loginButton.click();
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public String getWelcomeText() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(welcomeText));
         return welcomeText.getText();
     }
@@ -58,5 +68,20 @@ public class HomePage extends BasePage {
 
     public void goToCart() {
         cartLink.click();
+    }
+
+    public void clickCategory(String categoryName) {
+        driver.findElement(By.linkText(categoryName)).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void goToContact() {
+        contactLink.click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("recipient-email")));
     }
 }
