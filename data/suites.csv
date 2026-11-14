@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","9","Авторизация, проверка пустой корзины и покупка","Demoblaze Suite","Sat Nov 14 13:28:08 UTC 2026","skipped","Sat Nov 14 13:28:08 UTC 2026","tests.DemoblazeTests","Demoblaze Tests","tests.DemoblazeTests","Сквозной_сценарий_Авторизация_проверка_пустой_корзины_и_покупка"
-"","1","setUp","Demoblaze Suite","Sat Nov 14 13:28:08 UTC 2026","broken","Sat Nov 14 13:28:08 UTC 2026","tests.DemoblazeTests","Demoblaze Tests","tests.DemoblazeTests","setUp"
-"","0","Переход в контакты и отправка сообщения","Demoblaze Suite","Sat Nov 14 13:28:08 UTC 2026","skipped","Sat Nov 14 13:28:08 UTC 2026","tests.DemoblazeTests","Demoblaze Tests","tests.DemoblazeTests","Переход_в_контакты_и_отправка_сообщения"
+"","1","setUp","Demoblaze Suite","Sat Nov 14 13:29:24 UTC 2026","broken","Sat Nov 14 13:29:24 UTC 2026","tests.DemoblazeTests","Demoblaze Tests","tests.DemoblazeTests","setUp"
+"","1","Авторизация, проверка пустой корзины и покупка","Demoblaze Suite","Sat Nov 14 13:29:25 UTC 2026","skipped","Sat Nov 14 13:29:25 UTC 2026","tests.DemoblazeTests","Demoblaze Tests","tests.DemoblazeTests","Сквозной_сценарий_Авторизация_проверка_пустой_корзины_и_покупка"
+"","0","Переход в контакты и отправка сообщения","Demoblaze Suite","Sat Nov 14 13:29:25 UTC 2026","skipped","Sat Nov 14 13:29:25 UTC 2026","tests.DemoblazeTests","Demoblaze Tests","tests.DemoblazeTests","Переход_в_контакты_и_отправка_сообщения"
