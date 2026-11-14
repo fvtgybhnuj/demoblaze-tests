@@ -19,11 +19,11 @@ public class DemoblazeTests extends BaseTest {
     private static final String BASE_URL = "https://demoblaze.com/";
     private static final String USERNAME = "mikhail2026";
     private static final String PASSWORD = "Password123";
-//первый
-    @Test(priority = 1, description = "Сквозной сценарий: Авторизация, проверка пустой корзины и покупка")
+
+    @Test(priority = 1, description = "Авторизация, проверка пустой корзины и покупка")
     @Story("Авторизация и покупка")
     @Severity(SeverityLevel.CRITICAL)
-    public void testLoginAndAddProductsToCart() {
+    public void Сквозной_сценарий_Авторизация_проверка_пустой_корзины_и_покупка() {
         HomePage homePage = new HomePage(driver);
 
         Allure.step("Открыть главную страницу Demoblaze");
@@ -76,11 +76,11 @@ public class DemoblazeTests extends BaseTest {
         Assert.assertTrue(pageSource.contains("Samsung galaxy s6"), "Телефон не найден в корзине");
         Assert.assertTrue(pageSource.contains("Apple monitor 24"), "Монитор не найден в корзине");
     }
-    //второй
+
     @Test(priority = 2, description = "Переход в контакты и отправка сообщения")
     @Story("Контакты")
     @Severity(SeverityLevel.MINOR)
-    public void testContactForm() {
+    public void Переход_в_контакты_и_отправка_сообщения() {
         HomePage homePage = new HomePage(driver);
 
         Allure.step("Открыть главную страницу Demoblaze");
@@ -105,7 +105,6 @@ public class DemoblazeTests extends BaseTest {
             System.out.println("Alert не появился");
         }
     }
-
 
     private void clearCart(HomePage homePage) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
