@@ -41,10 +41,22 @@ jobs:
           tar -zxvf allure-2.30.0.tgz
           ./allure-2.30.0/bin/allure generate target/allure-results --clean -o allure-report
 
-      - name: Deploy to GitHub Pages
+      # Сохраняем отчет как артефакт (чтобы скачать, если Pages не сработает)
+      - name: Upload Allure Report as artifact
         if: always()
-        uses: peaceiris/actions-gh-pages@v3
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./allure-report
+          path: ./allure-report
+
+  # Официальный деплой на GitHub Pages
+  deploy:
+    needs: test-and-deploy
+    if: always()
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
