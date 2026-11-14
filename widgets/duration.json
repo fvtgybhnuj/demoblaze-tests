@@ -1,1 +1,1 @@
-[]
+[{"uid":"7778ff7742672386","name":"setUp","time":{"start":1794662695986,"stop":1794662695987,"duration":1},"status":"broken","severity":"normal"},{"uid":"cc73e12ffada38a6","name":"Переход в контакты и отправка сообщения","time":{"start":1794662696015,"stop":1794662696016,"duration":1},"status":"skipped","severity":"minor"},{"uid":"bb6682cdfec48944","name":"Авторизация, проверка пустой корзины и покупка","time":{"start":1794662696003,"stop":1794662696004,"duration":1},"status":"skipped","severity":"critical"}]
