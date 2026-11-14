@@ -28,6 +28,10 @@ jobs:
       - name: Run tests with Maven
         run: mvn clean test -DsuiteXmlFile=testng.xml -Dallure.results.directory=target/allure-results
 
+      - name: Check Allure results
+        if: always()
+        run: ls -la target/allure-results
+
       - name: Generate Allure Report
         if: always()
         run: |
